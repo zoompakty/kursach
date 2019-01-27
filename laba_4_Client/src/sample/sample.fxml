@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="794.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Label fx:id="labelFigure" layoutX="169.0" layoutY="14.0" text="Фигура" />
+    <Label fx:id="labelColor" layoutX="17.0" layoutY="14.0" text="Цвет" />
+    <Label fx:id="labelCont" layoutX="373.0" layoutY="13.0" text="Контур" />
+    <Label fx:id="labelRad" layoutX="486.0" layoutY="17.0" text="Радиус" />
+    <TextField id="textCount1" fx:id="textRadius" disable="false" layoutX="486.0" layoutY="44.0" prefHeight="19.951171875" prefWidth="83.0" visible="true" />
+    <TextField id="textCount1" fx:id="textWidth" disable="false" layoutX="697.0" layoutY="44.0" prefHeight="19.951171875" prefWidth="83.0" visible="true" />
+    <TextField id="textCount2" fx:id="textHeight" disable="false" layoutX="600.0" layoutY="44.0" prefHeight="19.951171875" prefWidth="83.0" />
+    <Label fx:id="labelW" layoutX="697.0" layoutY="21.0" text="Ширина" />
+    <Label fx:id="labelH" layoutX="600.0" layoutY="21.0" text="Высота" />
+    <ComboBox fx:id="cShape" layoutX="169.0" layoutY="41.0" onAction="#hideEvrExCircle">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <ColorPicker fx:id="cColor" layoutX="17.0" layoutY="41.0" prefHeight="25.0" prefWidth="96.0" />
+    <ColorPicker fx:id="cContour" layoutX="364.0" layoutY="36.0" prefHeight="25.0" prefWidth="96.0" />
+    <Label id="labelRad" fx:id="labelText" layoutX="486.0" layoutY="80.0" text="Введите Текст" />
+    <TextField id="textCount1" fx:id="textText" disable="false" layoutX="486.0" layoutY="107.0" prefHeight="19.951171875" prefWidth="294.0" visible="true" />
+    <Label id="labelRad" fx:id="labelFont" layoutX="600.0" layoutY="80.0" text="Размер шрифта" />
+    <TextField id="textCount1" fx:id="textFont" disable="false" layoutX="720.0" layoutY="76.0" prefHeight="19.951171875" prefWidth="48.0" visible="true" />
+    <Button fx:id="buttonSave" layoutX="17.0" layoutY="77.0" mnemonicParsing="false" text="Save" />
+    <Button id="buttonSave" fx:id="buttonOpen" layoutX="17.0" layoutY="117.0" mnemonicParsing="false" text="Open" />
+    <ScrollPane fx:id="openPane" content="$null" fitToHeight="false" fitToWidth="false" focusTraversable="false" layoutX="13.0" layoutY="159.0" pannable="true" pickOnBounds="false" prefHeight="519.0" prefWidth="636.0" style="-fx-fit-to-height: true;&#10;    -fx-fit-to-width: true;&#10;" />
+  </children>
+</Pane>
